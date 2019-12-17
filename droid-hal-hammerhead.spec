@@ -15,4 +15,12 @@
 /usr/bin/groupadd-user media_rw || :\
 %{nil}
 
+%define straggler_files \
+file_contexts.bin \
+property_contexts \
+seapp_contexts \
+service_contexts \
+%{nil}
+
+
 %include rpm/dhd/droid-hal-device.inc
